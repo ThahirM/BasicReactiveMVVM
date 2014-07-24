@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TMSearchViewModel.h"
+@class TMSearchViewModel;
 @interface TMHomeViewController : UITableViewController
 @property (nonatomic, strong) TMSearchViewModel *viewModel;
 @end

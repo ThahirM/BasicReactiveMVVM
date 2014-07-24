@@ -7,8 +7,12 @@
 //
 
 #import "TMHomeViewController.h"
+#import "TMSearchViewModel.h"
+#import "TMResultsViewController.h"
 
 @interface TMHomeViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *textFieldSearch;
+@property (weak, nonatomic) IBOutlet UIButton *buttonSearch;
 
 @end
 
@@ -32,30 +36,42 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    // set a view model if we dont have one
+    if (!_viewModel) _viewModel = [TMSearchViewModel new];
+    
+    // bind view model
+    [self bindViewModel];
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)bindViewModel {
+    RAC(self.viewModel, searchText) = self.textFieldSearch.rac_textSignal;
+    
+    self.buttonSearch.rac_command = self.viewModel.executeSearch;
+    
+    [self.viewModel.executeSearch.completionSignal subscribeNext:^(id x) {
+        [self.textFieldSearch resignFirstResponder];
+        [self.tableView reloadData];
+        [self performSegueWithIdentifier:@"kSegueResults" sender:self];
+        
+    }];
+
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return self.viewModel.searchResults.count;
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"kSearchCell"];
+    cell.textLabel.text = self.viewModel.searchResults[indexPath.row];
+    return cell;
+}
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -105,15 +121,17 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"kSegueResults"]) {
+        TMResultsViewController *vc = segue.destinationViewController;
+        vc.viewModel = _viewModel;
+    }
 }
-*/
+
 
 @end
