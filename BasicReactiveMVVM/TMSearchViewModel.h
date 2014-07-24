@@ -10,4 +10,10 @@
 
 @interface TMSearchViewModel : NSObject
 
+@property (nonatomic, strong) NSString *searchText;
+@property (nonatomic, strong) NSMutableArray *searchResults;
+
+@property (nonatomic, strong) RACCommand *executeSearch;
+//@property (nonatomic, strong) RACSignal *executeSearchSignal;
+
 @end
