@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2BF57681980EAFC00DC8DD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF57671980EAFC00DC8DD6 /* Foundation.framework */; };
+		D2BF576A1980EAFC00DC8DD6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF57691980EAFC00DC8DD6 /* CoreGraphics.framework */; };
+		D2BF576C1980EAFC00DC8DD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF576B1980EAFC00DC8DD6 /* UIKit.framework */; };
+		D2BF57721980EAFC00DC8DD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2BF57701980EAFC00DC8DD6 /* InfoPlist.strings */; };
+		D2BF57741980EAFC00DC8DD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF57731980EAFC00DC8DD6 /* main.m */; };
+		D2BF57781980EAFD00DC8DD6 /* TMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF57771980EAFD00DC8DD6 /* TMAppDelegate.m */; };
+		D2BF577B1980EAFD00DC8DD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2BF57791980EAFD00DC8DD6 /* Main.storyboard */; };
+		D2BF577E1980EAFD00DC8DD6 /* TMFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF577D1980EAFD00DC8DD6 /* TMFirstViewController.m */; };
+		D2BF57811980EAFD00DC8DD6 /* TMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF57801980EAFD00DC8DD6 /* TMSecondViewController.m */; };
+		D2BF57831980EAFD00DC8DD6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2BF57821980EAFD00DC8DD6 /* Images.xcassets */; };
+		D2BF578A1980EAFD00DC8DD6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF57891980EAFD00DC8DD6 /* XCTest.framework */; };
+		D2BF578B1980EAFD00DC8DD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF57671980EAFC00DC8DD6 /* Foundation.framework */; };
+		D2BF578C1980EAFD00DC8DD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF576B1980EAFC00DC8DD6 /* UIKit.framework */; };
+		D2BF57941980EAFD00DC8DD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2BF57921980EAFD00DC8DD6 /* InfoPlist.strings */; };
+		D2BF57961980EAFD00DC8DD6 /* BasicReactiveMVVMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BF57951980EAFD00DC8DD6 /* BasicReactiveMVVMTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2BF578D1980EAFD00DC8DD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2BF575C1980EAFC00DC8DD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2BF57631980EAFC00DC8DD6;
+			remoteInfo = BasicReactiveMVVM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D2BF57641980EAFC00DC8DD6 /* BasicReactiveMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicReactiveMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2BF57671980EAFC00DC8DD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2BF57691980EAFC00DC8DD6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D2BF576B1980EAFC00DC8DD6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D2BF576F1980EAFC00DC8DD6 /* BasicReactiveMVVM-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BasicReactiveMVVM-Info.plist"; sourceTree = "<group>"; };
+		D2BF57711980EAFC00DC8DD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D2BF57731980EAFC00DC8DD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2BF57751980EAFC00DC8DD6 /* BasicReactiveMVVM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BasicReactiveMVVM-Prefix.pch"; sourceTree = "<group>"; };
+		D2BF57761980EAFC00DC8DD6 /* TMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMAppDelegate.h; sourceTree = "<group>"; };
+		D2BF57771980EAFD00DC8DD6 /* TMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMAppDelegate.m; sourceTree = "<group>"; };
+		D2BF577A1980EAFD00DC8DD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2BF577C1980EAFD00DC8DD6 /* TMFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMFirstViewController.h; sourceTree = "<group>"; };
+		D2BF577D1980EAFD00DC8DD6 /* TMFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMFirstViewController.m; sourceTree = "<group>"; };
+		D2BF577F1980EAFD00DC8DD6 /* TMSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMSecondViewController.h; sourceTree = "<group>"; };
+		D2BF57801980EAFD00DC8DD6 /* TMSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMSecondViewController.m; sourceTree = "<group>"; };
+		D2BF57821980EAFD00DC8DD6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D2BF57881980EAFD00DC8DD6 /* BasicReactiveMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicReactiveMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2BF57891980EAFD00DC8DD6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D2BF57911980EAFD00DC8DD6 /* BasicReactiveMVVMTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BasicReactiveMVVMTests-Info.plist"; sourceTree = "<group>"; };
+		D2BF57931980EAFD00DC8DD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D2BF57951980EAFD00DC8DD6 /* BasicReactiveMVVMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicReactiveMVVMTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2BF57611980EAFC00DC8DD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2BF576A1980EAFC00DC8DD6 /* CoreGraphics.framework in Frameworks */,
+				D2BF576C1980EAFC00DC8DD6 /* UIKit.framework in Frameworks */,
+				D2BF57681980EAFC00DC8DD6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2BF57851980EAFD00DC8DD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2BF578A1980EAFD00DC8DD6 /* XCTest.framework in Frameworks */,
+				D2BF578C1980EAFD00DC8DD6 /* UIKit.framework in Frameworks */,
+				D2BF578B1980EAFD00DC8DD6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2BF575B1980EAFC00DC8DD6 = {
+			isa = PBXGroup;
+			children = (
+				D2BF576D1980EAFC00DC8DD6 /* BasicReactiveMVVM */,
+				D2BF578F1980EAFD00DC8DD6 /* BasicReactiveMVVMTests */,
+				D2BF57661980EAFC00DC8DD6 /* Frameworks */,
+				D2BF57651980EAFC00DC8DD6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2BF57651980EAFC00DC8DD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF57641980EAFC00DC8DD6 /* BasicReactiveMVVM.app */,
+				D2BF57881980EAFD00DC8DD6 /* BasicReactiveMVVMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2BF57661980EAFC00DC8DD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF57671980EAFC00DC8DD6 /* Foundation.framework */,
+				D2BF57691980EAFC00DC8DD6 /* CoreGraphics.framework */,
+				D2BF576B1980EAFC00DC8DD6 /* UIKit.framework */,
+				D2BF57891980EAFD00DC8DD6 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2BF576D1980EAFC00DC8DD6 /* BasicReactiveMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF57761980EAFC00DC8DD6 /* TMAppDelegate.h */,
+				D2BF57771980EAFD00DC8DD6 /* TMAppDelegate.m */,
+				D2BF57791980EAFD00DC8DD6 /* Main.storyboard */,
+				D2BF577C1980EAFD00DC8DD6 /* TMFirstViewController.h */,
+				D2BF577D1980EAFD00DC8DD6 /* TMFirstViewController.m */,
+				D2BF577F1980EAFD00DC8DD6 /* TMSecondViewController.h */,
+				D2BF57801980EAFD00DC8DD6 /* TMSecondViewController.m */,
+				D2BF57821980EAFD00DC8DD6 /* Images.xcassets */,
+				D2BF576E1980EAFC00DC8DD6 /* Supporting Files */,
+			);
+			path = BasicReactiveMVVM;
+			sourceTree = "<group>";
+		};
+		D2BF576E1980EAFC00DC8DD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF576F1980EAFC00DC8DD6 /* BasicReactiveMVVM-Info.plist */,
+				D2BF57701980EAFC00DC8DD6 /* InfoPlist.strings */,
+				D2BF57731980EAFC00DC8DD6 /* main.m */,
+				D2BF57751980EAFC00DC8DD6 /* BasicReactiveMVVM-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2BF578F1980EAFD00DC8DD6 /* BasicReactiveMVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF57951980EAFD00DC8DD6 /* BasicReactiveMVVMTests.m */,
+				D2BF57901980EAFD00DC8DD6 /* Supporting Files */,
+			);
+			path = BasicReactiveMVVMTests;
+			sourceTree = "<group>";
+		};
+		D2BF57901980EAFD00DC8DD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2BF57911980EAFD00DC8DD6 /* BasicReactiveMVVMTests-Info.plist */,
+				D2BF57921980EAFD00DC8DD6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2BF57631980EAFC00DC8DD6 /* BasicReactiveMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2BF57991980EAFD00DC8DD6 /* Build configuration list for PBXNativeTarget "BasicReactiveMVVM" */;
+			buildPhases = (
+				D2BF57601980EAFC00DC8DD6 /* Sources */,
+				D2BF57611980EAFC00DC8DD6 /* Frameworks */,
+				D2BF57621980EAFC00DC8DD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BasicReactiveMVVM;
+			productName = BasicReactiveMVVM;
+			productReference = D2BF57641980EAFC00DC8DD6 /* BasicReactiveMVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2BF57871980EAFD00DC8DD6 /* BasicReactiveMVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2BF579C1980EAFD00DC8DD6 /* Build configuration list for PBXNativeTarget "BasicReactiveMVVMTests" */;
+			buildPhases = (
+				D2BF57841980EAFD00DC8DD6 /* Sources */,
+				D2BF57851980EAFD00DC8DD6 /* Frameworks */,
+				D2BF57861980EAFD00DC8DD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2BF578E1980EAFD00DC8DD6 /* PBXTargetDependency */,
+			);
+			name = BasicReactiveMVVMTests;
+			productName = BasicReactiveMVVMTests;
+			productReference = D2BF57881980EAFD00DC8DD6 /* BasicReactiveMVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2BF575C1980EAFC00DC8DD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Thahir;
+				TargetAttributes = {
+					D2BF57871980EAFD00DC8DD6 = {
+						TestTargetID = D2BF57631980EAFC00DC8DD6;
+					};
+				};
+			};
+			buildConfigurationList = D2BF575F1980EAFC00DC8DD6 /* Build configuration list for PBXProject "BasicReactiveMVVM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2BF575B1980EAFC00DC8DD6;
+			productRefGroup = D2BF57651980EAFC00DC8DD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2BF57631980EAFC00DC8DD6 /* BasicReactiveMVVM */,
+				D2BF57871980EAFD00DC8DD6 /* BasicReactiveMVVMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2BF57621980EAFC00DC8DD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2BF57831980EAFD00DC8DD6 /* Images.xcassets in Resources */,
+				D2BF57721980EAFC00DC8DD6 /* InfoPlist.strings in Resources */,
+				D2BF577B1980EAFD00DC8DD6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2BF57861980EAFD00DC8DD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2BF57941980EAFD00DC8DD6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2BF57601980EAFC00DC8DD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2BF577E1980EAFD00DC8DD6 /* TMFirstViewController.m in Sources */,
+				D2BF57741980EAFC00DC8DD6 /* main.m in Sources */,
+				D2BF57781980EAFD00DC8DD6 /* TMAppDelegate.m in Sources */,
+				D2BF57811980EAFD00DC8DD6 /* TMSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2BF57841980EAFD00DC8DD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2BF57961980EAFD00DC8DD6 /* BasicReactiveMVVMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2BF578E1980EAFD00DC8DD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2BF57631980EAFC00DC8DD6 /* BasicReactiveMVVM */;
+			targetProxy = D2BF578D1980EAFD00DC8DD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2BF57701980EAFC00DC8DD6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2BF57711980EAFC00DC8DD6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D2BF57791980EAFD00DC8DD6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2BF577A1980EAFD00DC8DD6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2BF57921980EAFD00DC8DD6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2BF57931980EAFD00DC8DD6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2BF57971980EAFD00DC8DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D2BF57981980EAFD00DC8DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2BF579A1980EAFD00DC8DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BasicReactiveMVVM/BasicReactiveMVVM-Prefix.pch";
+				INFOPLIST_FILE = "BasicReactiveMVVM/BasicReactiveMVVM-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D2BF579B1980EAFD00DC8DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BasicReactiveMVVM/BasicReactiveMVVM-Prefix.pch";
+				INFOPLIST_FILE = "BasicReactiveMVVM/BasicReactiveMVVM-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D2BF579D1980EAFD00DC8DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BasicReactiveMVVM.app/BasicReactiveMVVM";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BasicReactiveMVVM/BasicReactiveMVVM-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BasicReactiveMVVMTests/BasicReactiveMVVMTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D2BF579E1980EAFD00DC8DD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BasicReactiveMVVM.app/BasicReactiveMVVM";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BasicReactiveMVVM/BasicReactiveMVVM-Prefix.pch";
+				INFOPLIST_FILE = "BasicReactiveMVVMTests/BasicReactiveMVVMTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2BF575F1980EAFC00DC8DD6 /* Build configuration list for PBXProject "BasicReactiveMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2BF57971980EAFD00DC8DD6 /* Debug */,
+				D2BF57981980EAFD00DC8DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2BF57991980EAFD00DC8DD6 /* Build configuration list for PBXNativeTarget "BasicReactiveMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2BF579A1980EAFD00DC8DD6 /* Debug */,
+				D2BF579B1980EAFD00DC8DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D2BF579C1980EAFD00DC8DD6 /* Build configuration list for PBXNativeTarget "BasicReactiveMVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2BF579D1980EAFD00DC8DD6 /* Debug */,
+				D2BF579E1980EAFD00DC8DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2BF575C1980EAFC00DC8DD6 /* Project object */;
+}
