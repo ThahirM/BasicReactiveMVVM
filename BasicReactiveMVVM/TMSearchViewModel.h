@@ -1,13 +1,13 @@
 //
-//  TMSecondViewController.h
+//  TMSearchViewModel.h
 //  BasicReactiveMVVM
 //
 //  Created by Thahir on 24/07/14.
 //  Copyright (c) 2014 Thahir. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface TMSecondViewController : UIViewController
+@interface TMSearchViewModel : NSObject
 
 @end
