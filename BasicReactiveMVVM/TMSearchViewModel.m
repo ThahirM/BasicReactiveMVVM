@@ -31,6 +31,10 @@
     }];
 }
 
+- (RACSignal *)executeSearchCompletionSignal {
+    return self.executeSearch.completionSignal;
+}
+
 - (RACSignal *)executeSearchSignal {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
 
