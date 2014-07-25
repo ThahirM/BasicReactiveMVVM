@@ -42,8 +42,7 @@
         [subscriber sendNext:self.searchResults];
         [subscriber sendCompleted];
         
-        return [RACDisposable disposableWithBlock:^{
-        }];
+        return nil;
     }];
 }
 @end
