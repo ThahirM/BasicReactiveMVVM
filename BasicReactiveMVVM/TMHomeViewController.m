@@ -50,7 +50,7 @@
     
     self.buttonSearch.rac_command = self.viewModel.executeSearch;
     
-    [self.viewModel.executeSearch.completionSignal subscribeNext:^(id x) {
+    [self.viewModel.executeSearchCompletionSignal subscribeNext:^(id x) {
         [self.textFieldSearch resignFirstResponder];
         [self.tableView reloadData];
         [self performSegueWithIdentifier:@"kSegueResults" sender:self];
