@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D261D1C21988C7D200D45D7F /* TMTableViewBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = D261D1C11988C7D200D45D7F /* TMTableViewBinder.m */; };
+		D261D1C71988F92000D45D7F /* TMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D261D1C61988F92000D45D7F /* TMTableViewCell.m */; };
+		D261D1CC1988F96A00D45D7F /* TMCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D261D1CB1988F96A00D45D7F /* TMCellViewModel.m */; };
+		D29587A9198A397500056CAC /* TMSharedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D29587A8198A397500056CAC /* TMSharedModel.m */; };
+		D29587AD198A48B600056CAC /* TMTvinciModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D29587AC198A48B600056CAC /* TMTvinciModel.m */; };
 		D2BF57681980EAFC00DC8DD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF57671980EAFC00DC8DD6 /* Foundation.framework */; };
 		D2BF576A1980EAFC00DC8DD6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF57691980EAFC00DC8DD6 /* CoreGraphics.framework */; };
 		D2BF576C1980EAFC00DC8DD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BF576B1980EAFC00DC8DD6 /* UIKit.framework */; };
@@ -42,6 +47,19 @@
 /* Begin PBXFileReference section */
 		722D361C25C44099A4F9930D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		99207A5BDB484EB3962D7299 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D261D1BD1988C69600D45D7F /* TMReactiveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMReactiveView.h; sourceTree = "<group>"; };
+		D261D1C01988C7D200D45D7F /* TMTableViewBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMTableViewBinder.h; sourceTree = "<group>"; };
+		D261D1C11988C7D200D45D7F /* TMTableViewBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMTableViewBinder.m; sourceTree = "<group>"; };
+		D261D1C31988E70B00D45D7F /* TMReactiveCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMReactiveCell.h; sourceTree = "<group>"; };
+		D261D1C51988F92000D45D7F /* TMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMTableViewCell.h; sourceTree = "<group>"; };
+		D261D1C61988F92000D45D7F /* TMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMTableViewCell.m; sourceTree = "<group>"; };
+		D261D1CA1988F96A00D45D7F /* TMCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCellViewModel.h; sourceTree = "<group>"; };
+		D261D1CB1988F96A00D45D7F /* TMCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMCellViewModel.m; sourceTree = "<group>"; };
+		D261D1CD198904BC00D45D7F /* TMTableViewBinderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMTableViewBinderDelegate.h; sourceTree = "<group>"; };
+		D29587A7198A397500056CAC /* TMSharedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMSharedModel.h; sourceTree = "<group>"; };
+		D29587A8198A397500056CAC /* TMSharedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMSharedModel.m; sourceTree = "<group>"; };
+		D29587AB198A48B600056CAC /* TMTvinciModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMTvinciModel.h; sourceTree = "<group>"; };
+		D29587AC198A48B600056CAC /* TMTvinciModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMTvinciModel.m; sourceTree = "<group>"; };
 		D2BF57641980EAFC00DC8DD6 /* BasicReactiveMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicReactiveMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BF57671980EAFC00DC8DD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2BF57691980EAFC00DC8DD6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,6 +116,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D261D1BE1988C6A100D45D7F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D261D1BD1988C69600D45D7F /* TMReactiveView.h */,
+				D261D1C31988E70B00D45D7F /* TMReactiveCell.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		D261D1BF1988C7BC00D45D7F /* TableView Binder */ = {
+			isa = PBXGroup;
+			children = (
+				D261D1CD198904BC00D45D7F /* TMTableViewBinderDelegate.h */,
+				D261D1C01988C7D200D45D7F /* TMTableViewBinder.h */,
+				D261D1C11988C7D200D45D7F /* TMTableViewBinder.m */,
+			);
+			name = "TableView Binder";
+			sourceTree = "<group>";
+		};
+		D261D1C41988F90000D45D7F /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D261D1C51988F92000D45D7F /* TMTableViewCell.h */,
+				D261D1C61988F92000D45D7F /* TMTableViewCell.m */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		D261D1C91988F95100D45D7F /* CellViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D261D1CA1988F96A00D45D7F /* TMCellViewModel.h */,
+				D261D1CB1988F96A00D45D7F /* TMCellViewModel.m */,
+			);
+			name = CellViewModel;
+			sourceTree = "<group>";
+		};
+		D29587A5198A393B00056CAC /* Tvinci */ = {
+			isa = PBXGroup;
+			children = (
+				D29587AB198A48B600056CAC /* TMTvinciModel.h */,
+				D29587AC198A48B600056CAC /* TMTvinciModel.m */,
+			);
+			name = Tvinci;
+			sourceTree = "<group>";
+		};
+		D29587A6198A396000056CAC /* Shared Model */ = {
+			isa = PBXGroup;
+			children = (
+				D29587A7198A397500056CAC /* TMSharedModel.h */,
+				D29587A8198A397500056CAC /* TMSharedModel.m */,
+			);
+			name = "Shared Model";
+			sourceTree = "<group>";
+		};
 		D2BF575B1980EAFC00DC8DD6 = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +252,8 @@
 		D2BF579F1980ED6D00DC8DD6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D29587A6198A396000056CAC /* Shared Model */,
+				D29587A5198A393B00056CAC /* Tvinci */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -195,6 +270,7 @@
 		D2BF57A11980ED7600DC8DD6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D261D1C91988F95100D45D7F /* CellViewModel */,
 				D2BF57B41980F47100DC8DD6 /* SearchViewModel */,
 			);
 			name = ViewModel;
@@ -203,6 +279,7 @@
 		D2BF57A21980ED9800DC8DD6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D261D1C41988F90000D45D7F /* TableViewCell */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -246,6 +323,8 @@
 		D2BF57B8198104C300DC8DD6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D261D1BF1988C7BC00D45D7F /* TableView Binder */,
+				D261D1BE1988C6A100D45D7F /* Protocols */,
 				D2BF57B9198104CD00DC8DD6 /* Categories */,
 			);
 			name = Components;
@@ -424,10 +503,15 @@
 				D2BF57A61980EF5F00DC8DD6 /* TMHomeViewController.m in Sources */,
 				D2BF57C01981051600DC8DD6 /* UISearchDisplayController+RAC.m in Sources */,
 				D2BF57741980EAFC00DC8DD6 /* main.m in Sources */,
+				D29587AD198A48B600056CAC /* TMTvinciModel.m in Sources */,
 				D2BF57C4198105B000DC8DD6 /* RACCommand+Completion.m in Sources */,
+				D261D1C21988C7D200D45D7F /* TMTableViewBinder.m in Sources */,
+				D261D1CC1988F96A00D45D7F /* TMCellViewModel.m in Sources */,
 				D2BF57AA1980EF8300DC8DD6 /* TMResultsViewController.m in Sources */,
 				D2BF57781980EAFD00DC8DD6 /* TMAppDelegate.m in Sources */,
 				D2BF57C81981063300DC8DD6 /* UISearchBar+RAC.m in Sources */,
+				D261D1C71988F92000D45D7F /* TMTableViewCell.m in Sources */,
+				D29587A9198A397500056CAC /* TMSharedModel.m in Sources */,
 				D2BF57B71980F48900DC8DD6 /* TMSearchViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

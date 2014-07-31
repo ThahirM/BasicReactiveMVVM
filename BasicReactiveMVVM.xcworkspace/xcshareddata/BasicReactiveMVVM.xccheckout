@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>21124E55-8D54-4200-85F4-F3A02D6EEC4C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BasicReactiveMVVM</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1500AE52-0952-42B9-A8D8-0211E1BBBB74</key>
+		<string>https://github.com/ThahirM/BasicReactiveMVVM.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BasicReactiveMVVM.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1500AE52-0952-42B9-A8D8-0211E1BBBB74</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ThahirM/BasicReactiveMVVM.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1500AE52-0952-42B9-A8D8-0211E1BBBB74</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1500AE52-0952-42B9-A8D8-0211E1BBBB74</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BasicReactiveMVVM</string>
+		</dict>
+	</array>
+</dict>
+</plist>
