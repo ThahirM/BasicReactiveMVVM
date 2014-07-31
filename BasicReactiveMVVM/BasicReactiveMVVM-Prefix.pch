@@ -17,4 +17,6 @@
     #import "RACCommand+Completion.h"
     #import "UISearchDisplayController+RAC.h"
     #import "UISearchBar+RAC.h"
+    #import "TMReactiveView.h"
+    #import "TMReactiveCell.h"
 #endif
