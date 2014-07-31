@@ -9,8 +9,10 @@
 #import "TMHomeViewController.h"
 #import "TMSearchViewModel.h"
 #import "TMResultsViewController.h"
+#import "TMTableViewBinder.h"
+#import "TMTableViewCell.h"
 
-@interface TMHomeViewController ()
+@interface TMHomeViewController () <TMReactiveView, TMTableViewBinderDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *textFieldSearch;
 @property (weak, nonatomic) IBOutlet UIButton *buttonSearch;
 
@@ -52,26 +54,27 @@
     
     [self.viewModel.executeSearchCompletionSignal subscribeNext:^(id x) {
         [self.textFieldSearch resignFirstResponder];
-        [self.tableView reloadData];
         [self performSegueWithIdentifier:@"kSegueResults" sender:self];
         
     }];
 
+    TMTableViewBinder *tableViewBinder = [TMTableViewBinder bindTableView:self.tableView withSourceSignal:self.viewModel.executeSearchCompletionSignal selectionCommand:nil cellClass:[TMTableViewCell class]];
+    tableViewBinder.delegate = self;
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    // Return the number of rows in the section.
-    return self.viewModel.searchResults.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"kSearchCell"];
-    cell.textLabel.text = self.viewModel.searchResults[indexPath.row];
-    return cell;
-}
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+//{
+//    // Return the number of rows in the section.
+//    return self.viewModel.searchResults.count;
+//}
+//
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"kSearchCell"];
+//    cell.textLabel.text = self.viewModel.searchResults[indexPath.row];
+//    return cell;
+//}
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

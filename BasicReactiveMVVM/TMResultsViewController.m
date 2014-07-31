@@ -8,8 +8,10 @@
 
 #import "TMResultsViewController.h"
 #import "TMSearchViewModel.h"
+#import "TMTableViewBinder.h"
+#import "TMTableViewCell.h"
 
-@interface TMResultsViewController ()
+@interface TMResultsViewController () <TMReactiveView, TMTableViewBinderDelegate>
 
 @end
 
@@ -33,6 +35,9 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    // bind view model
+    [self bindViewModel];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,19 +46,33 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)bindViewModel {
+    TMTableViewBinder *tableViewBinder = [TMTableViewBinder bindTableView:self.tableView withSourceSignal:RACObserve(self.viewModel, searchResults) selectionCommand:nil cellClass:[TMTableViewCell class]];
+    tableViewBinder.delegate = self;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return @"BLAH";
+}
+
+- (void)cellButtonTap:(id)data {
+    NSLog(@"cell data == %@", data);
+}
 #pragma mark - Table view data source
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    // Return the number of rows in the section.
-    return self.viewModel.searchResults.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"kResultCell"];
-    cell.textLabel.text = self.viewModel.searchResults[indexPath.row];
-    return cell;
-}
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+//{
+//    // Return the number of rows in the section.
+//    return self.viewModel.searchResults.count;
+//}
+//
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"kResultCell"];
+//    cell.textLabel.text = self.viewModel.searchResults[indexPath.row];
+//    return cell;
+//}
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
