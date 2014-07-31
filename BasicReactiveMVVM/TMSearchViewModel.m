@@ -7,6 +7,7 @@
 //
 
 #import "TMSearchViewModel.h"
+#import "TMSharedModel.h"
 
 @implementation TMSearchViewModel
 
@@ -37,11 +38,14 @@
 
 - (RACSignal *)executeSearchSignal {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-
-        self.searchResults = @[@"a", @"b", @"c", @"d", @"e", @"f", @"g", @"h", @"i", @"j"].mutableCopy;
-        [subscriber sendNext:self.searchResults];
-        [subscriber sendCompleted];
         
+        TMSharedModel *sharedModel = [[TMSharedModel sharedInstance] serviceProvider];
+        [sharedModel doLoginWithParams:nil completionBlock:^(id result) {
+            self.searchResults = result;
+            [subscriber sendNext:self.searchResults];
+            [subscriber sendCompleted];
+        }];
+
         return nil;
     }];
 }
